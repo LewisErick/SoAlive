@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.menu {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger {
+  display: flex;
+  color: white;
+  flex-direction: row;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  padding: 0;
+  background-color: gray;
+}
+
+.product {
+  flex: 1;
+  text-align: center;
+  margin: 15px;
+  border: 1px solid darkgray;
+}
+
+.social_icon {
+  flex: 1;
+  text-align: center;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.company {
+  text-align: center;
+  flex: 2;
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.hamburger {
+  padding: 5px;
+}
+
+footer {
+  border-top: 1px solid darkgray;
+}
+
+/* Desktop shows menu and shows products in flex-direction: row */
+@media only screen and (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .menu li {
+    margin: 20px;
+    list-style-type: none;
+    color: white;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .company {
+    text-align: left;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+/* Tablet in Portrait Mode shows products in flex-direction: column */
+@media only screen  and (min-width : 768px)  and (max-width : 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+#footer {
+    width:100%;
+    background:#999;
+    bottom: 0px;
+    position: fixed;
+ }
+
+ nav {
+     font-size: 30px;
+ }
+
+ main {
+     margin-bottom: 75px;
+ }
+
+ .demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('noviazgo.jpg') center / cover;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+  
+  .doctors-main {
+      display: none;
+  }
+
+  .products-main {
+      display: none;
+  }
+
+  [type="checkbox"] + span:not(.lever) {
+    display: none;
+  }
